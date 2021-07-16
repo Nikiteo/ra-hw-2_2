@@ -1,0 +1,72 @@
+.products-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  display: block;
+  width: 330px;
+  height: 330px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+  position: relative;
+  box-shadow: 3px 3px 5px 5px #aaaaaa;
+  transition: box-shadow .3s ease;
+}
+
+.card:hover {
+  box-shadow: 3px 3px 5px 6px #888888;
+}
+
+.card-name {
+  position: absolute;
+  text-transform: uppercase;
+  top: 10%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 22px;
+}
+
+.card-color {
+  position: absolute;
+  text-transform: lowercase;
+  top: 20%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+.card-price {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  color: red;
+  font-size: 22px;
+}
+
+.card-button {
+  color: red;
+  outline: none;
+  border: 2px solid red;
+  font-size: 14px;
+  line-height: 28px;
+  border-radius: 14px;
+  position: absolute;
+  bottom: 5%;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0 10px;
+  letter-spacing: -0.03em;
+  left: 60%;
+  cursor: pointer;
+  transition: box-shadow .3s ease;
+}
+
+.card-button:hover {
+  box-shadow: 1px 1px 3px red;
+}
